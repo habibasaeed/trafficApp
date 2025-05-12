@@ -1,0 +1,18 @@
+# Node.js modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment files (don't commit sensitive information)
+.env
+
+# Build directory (for React/Next.js projects)
+build/
+
+# Mac OS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
