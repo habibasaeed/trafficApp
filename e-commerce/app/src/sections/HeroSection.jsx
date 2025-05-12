@@ -14,19 +14,19 @@ export default function HeroSection() {
           <br />
           For Smarter Cities
         </h1>
-
-        <p className="max-w-xl text-gray-500 font-mono text-sm">
-          Our AI and IoT-based Traffic Monitoring System is designed to tackle
-          the growing challenges of urban traffic congestion, accidents, and
-          inefficiencies. By leveraging cutting-edge technologies like machine
-          learning, real-time data processing, and vehicle-to-everything (V2X)
-          communication, we provide a dynamic and intelligent solution for
-          modern traffic management. Whether it's reducing travel time,
-          enhancing road safety, or enabling smart communication between
-          vehicles and infrastructure, our system is built to transform the way
-          cities handle traffic.
-        </p>
-
+        <div>
+          <p className="max-w-xl text-gray-500 font-mono text-sm">
+            Our AI and IoT-based Traffic Monitoring System is designed to tackle
+            the growing challenges of urban traffic congestion, accidents, and
+            inefficiencies. By leveraging cutting-edge technologies like machine
+            learning, real-time data processing, and vehicle-to-everything (V2X)
+            communication, we provide a dynamic and intelligent solution for
+            modern traffic management. Whether it is reducing travel time,
+            enhancing road safety, or enabling smart communication between
+            vehicles and infrastructure, our system is built to transform the
+            way cities handle traffic.
+          </p>
+        </div>
         <div className="flex flex-wrap items-center gap-4">
           <a
             href="#download"

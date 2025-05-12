@@ -1,8 +1,8 @@
 import third from "../third.png";
 import forth from "../forth.png";
-
 import logo7 from "../logo7.png"; // Update the path for logo7
 import logo9 from "../logo9.png";
+
 export default function AdvantageSection() {
   return (
     <section id="review" className="section-space mt-16">
@@ -22,21 +22,11 @@ export default function AdvantageSection() {
               {[
                 {
                   title: "Efficiency, Safety and Real-Time Insights",
-                  description: (
-                    <p>
-                      Our system leverages advanced AI algorithms, such as YOLO
-                      (You Only Look Once), to analyze live video feeds and
-                      monitor traffic conditions in real-time, enabling dynamic
-                      traffic flow optimization and reduced travel times. It
-                      enhances road safety by detecting accidents and hazards
-                      proactively, ensuring faster emergency responses and safer
-                      roads for drivers and pedestrians. Additionally, through
-                      IoT-enabled communication protocols like MQTT, the system
-                      facilitates seamless interaction between traffic
-                      infrastructure and vehicles, enabling smarter
-                      decision-making and improved overall traffic management.
-                    </p>
-                  ),
+                  description: [
+                    "Our system leverages advanced AI algorithms, such as YOLO (You Only Look Once), to analyze live video feeds and monitor traffic conditions in real-time, enabling dynamic traffic flow optimization and reduced travel times.",
+                    "It enhances road safety by detecting accidents and hazards proactively, ensuring faster emergency responses and safer roads for drivers and pedestrians.",
+                    "Additionally, through IoT-enabled communication protocols like MQTT, the system facilitates seamless interaction between traffic infrastructure and vehicles, enabling smarter decision-making and improved overall traffic management.",
+                  ],
                   logo: logo7,
                 },
               ].map(({ title, description, logo }) => (
@@ -45,7 +35,11 @@ export default function AdvantageSection() {
                     <img src={logo} alt={title} className="h-12 w-12" />
                     <p className="font-bold text-2xl mt-2">{title}</p>
                   </div>
-                  <p className="text-sm text-gray-500">{description}</p>
+                  {description.map((desc, index) => (
+                    <p key={index} className="text-sm text-gray-500">
+                      {desc}
+                    </p>
+                  ))}
                 </div>
               ))}
             </div>
@@ -87,14 +81,12 @@ export default function AdvantageSection() {
               updates, and safer roads with proactive hazard detection.
               <br />
               For Emergency Services: Faster response times and prioritized
-              routes ensure that help arrives when and where it's needed most.
+              routes ensure that help arrives when and where it is needed most.
             </p>
           </div>
           {/* No need for description here, as it's already covered in the paragraph above */}
         </div>
         {/* Text Section */}
-
-        {/* Feature Blocks with Title, Description, and Logo */}
       </div>
     </section>
   );
