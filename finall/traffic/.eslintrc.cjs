@@ -17,4 +17,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  globals: {
+    process: "readonly", // This tells ESLint that `process` is a global variable
+  },
 };
